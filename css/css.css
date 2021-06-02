@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+form div {
+	margin: 5px 20px 5px 20px;
+	position: relative;
+}
+
+fieldset {
+	border: 1px solid #7caee1;
+}
+
+label {
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	color: #818181;
+}
+
+input {
+	margin-right: 10px;
+	width: 150px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1171px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header{
+    height: 109px;
+    background-color: #00153D;
+    color: white;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.header a:hover{
+    opacity: 100%;
+}
+
+.left_header {
+    margin: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right_header{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_header{
+    position: relative;
+    display: block;
+    left: -60px;
+    font-size: 50px;
+    font-weight: 500px;
+    word-spacing: -9px;
+    transition: word-spacing ease-in-out .2s ;
+}
+
+.logo_header:hover{
+    word-spacing: -3px;
+}
+
+a .anchor {
+    opacity: 70%;
+    max-width: 1171px;
+    right: 3%;
+    bottom: 5%;
+    position: fixed;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: 600;
+    color: black ;
+    background-color: white;
+    padding: 10px 15px;
+    border: solid 2px black;
+    border-radius: 10px;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out, font-weight .3s ease-in-out, opacity .3s ease-in-out,
+                box-shadow .3s ease-in-out;
+}   
+
+a .anchor:hover {
+    background-color: #00153D;
+    color: white;
+    border-color: transparent;
+    opacity: 1;
+    box-shadow: 0 0 5px #000c24;
+}
+
+.logo_header a{    
+    width: 370px;
+    display: flex;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    opacity: 90%;
+}
+.header img{
+    width: 43px;
+}
+
+
+
+/* navigation */
+
+
+.navigation{
+    margin-bottom: 60px;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    transition: background ease .4s;
+}
+
+.navigation:hover{
+    opacity: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+.navigator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.navigator a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: ease .16s;
+   
+}
+
+.navigator a:hover{
+   transform: scale(1.3);
+   padding: 10px;
+}
+
+.navigator a:last-child{
+    color: rgb(185, 1, 1);
+}
+
+.navigator a:hover:last-child{
+    color: red;
+}
+
+
+.navigation input{
+    padding: 0 10px 0 10px;
+    width: 250px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: outset 3px;
+    transition: width  ease-in-out .3s;
+}
+.navigation input:hover{
+    width: 350px;
+    height: 40px;
+}
+
+
+.sliker{
+    padding-bottom:70px;
+}
+
+
+/* CATALOG */
+.catalog_general{
+    display: flex;
+    align-items: center;
+}
+
+.catalog{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 1171px;
+}
+
+.catalog img{
+    transition: ease-in-out .3s;
+}
+
+.catalog img:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.17);
+    transform: scale(1.06);
+}
+
+.img_catalog{
+    position: relative;
+    width: 250px;
+    height: 340px;
+}
+
+.shoes1_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes1.jpg);
+}
+
+.shoes1_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes1.1.jpg);
+}
+
+.shoes2_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes2.jpg);
+}
+
+.shoes2_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes2.1.jpg);
+}
+
+
+
+.shoes3_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes3.jpg);
+}
+
+.shoes3_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes3.1.jpg);
+}
+
+.shoes4_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes4.jpg);
+}
+
+.shoes4_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes4.1.jpg);
+}
+
+.shoes5_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes5.jpg);
+}
+
+.shoes5_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes5.1.jpg);
+}
+
+.shoes6_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes6.jpg);
+}
+
+.shoes6_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes6.1.jpg);
+}
+
+
+
+.shoes7_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes7.jpg);
+}
+
+.shoes7_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes7.1.jpg);
+}
+
+.shoes8_catalog{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .2s;
+    background-image: url(../images/catalog/product/shoes8.jpg);
+}
+
+.shoes8_catalog:hover{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/catalog/product/shoes8.1.jpg);
+}
+
+
+.catalog_title{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.catalog_title p {
+    padding-bottom: 5px;
+    border-bottom: 4px solid black;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.sale_cards{
+    position: relative;
+    background-color: white;
+    top: -40px;
+    max-width: 90px;
+    padding: 5px;
+    border: solid black 4px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#miss{
+    border: none;
+    background-color: inherit;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.name_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    word-spacing: 7px;
+    line-height: 30px;
+}
+
+.left_cards img{
+    width: 600px;
+}
+
+.right_cards img{
+    width: 400px;
+}
+
+.title_cards{
+    position: relative;
+    top: -20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text_cards{
+    position: relative;
+    top: -20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* Products */
+    .products img{
+        width: 250px;
+    }
+
+    .products .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products_items{
+        height: 500px;
+        width: 250px;
+        margin-top: 20px;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        transition: ease-in .03s;
+    }
+    .products_items:hover{
+        transform: scale(1.01);
+        box-shadow: 0 11px 15px rgba(0,0,0,0.03);
+    }
+
+
+    .title_products{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .products_main{
+        padding: 30px;
+        padding-bottom: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .text_product{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text_products{
+        font-size: 17px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+
+    .price_products{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .name_products{
+        color: black;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+    }
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    background-color: #00153D;
+    height: 500px;
+    margin-top: 100px;
+    padding:30px 0 10px 0 ;
+    color: white;
+
+}
+
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.main_footer{
+    display: flex;
+    flex-direction: column;
+    width: 1171px;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.up_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.down_footer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.help:nth-child(2n+1){
+    width: 310px;
+}
+
+.title_footer{
+    padding-bottom:20px ;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.guide{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text_footer{
+    opacity: 80%;
+    font-weight: 400;
+    font-size:15px;
+}
+
+.text_footer:hover{
+    opacity: 100%;
+    font-size: 16px;
+}
+
+.language{
+    position: relative;
+    bottom: 20px;
+    font-size: 17px;
+    font-weight:400 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright{
+    position: relative;
+    padding-top: 50px;
+    opacity: 50%;
+    font-size: 12px;
+}
+
+
+/* FILTERS */
+
+.menu_catalog_full{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters_main{
+    z-index: 2;
+    position: relative;
+    top: -40px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters{
+    display: flex;
+    width: 100%;
+}
+
+
+
+nav ul li{
+    display:inline-block;
+    background-color: white;
+    border: solid 1px;   
+    transition:background-color ease-in-out .13s;
+}
+
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+nav ul {
+padding:0;
+margin:0.1vh -100px -100px -1px;
+list-style: none;
+position: relative;
+
+}
+
+nav a {
+    display:block;
+    padding: 0 30px 0 20px;
+    color: black;
+    font-size:20px;
+    line-height: 50px;
+    text-decoration:none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+position: relative;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width: 228px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+nav li{
+    margin: 0 -1px -1px 0;
+    box-sizing: border-box;
+    color: black;
+    transition:color ease .2s;
+}
+
+
+nav ul li:hover{
+    border: solid 1px black;
+    transform: scale(1.001);
+    background-color: #00153d6b;    
+}
+
+nav a:hover{
+    color: white;
+    background-color: #00153D;
+}
+
